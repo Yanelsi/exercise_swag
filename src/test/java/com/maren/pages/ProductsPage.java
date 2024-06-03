@@ -13,7 +13,8 @@ public class ProductsPage extends BasePage {
     public List<String> getProductsName(){
         List<String> products_name = new ArrayList<>();
         for (int i = 0; i < products.size() ; i++) {
-           products_name.add(products.get(1).getText().trim());
+            System.out.println(products.get(i).getText().trim());
+           products_name.add(products.get(i).getText().trim());
         }
         return products_name;
     }
